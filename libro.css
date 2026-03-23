@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Banner{ /*--------------------------------Banner de color*/
+    background: #0a0f1e;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body{
+    background-color: beige;
+}
+
+h1{ /*--------------------------------Dia del libro titulo*/
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 67px;
+}
+
+#seccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

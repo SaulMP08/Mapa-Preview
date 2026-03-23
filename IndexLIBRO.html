@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/LOPERIS.jpg">
+    <link rel="stylesheet" href="libro.css">
+    <script src="scriptLIBRO.js" defer></script>
+    <title>Document</title>
+</head>
+
+<header class="Banner">
+    <section>
+        <div>
+            <h1>Mapa, Dia del Libro</h1>
+
+        </div>
+    </section>
+</header>
+
+<div class="main">
+         <svg class="plan" width="1020" height="700" viewBox="0 0 820 600" id="mainSvg">
+        <defs>
+          <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.8" fill="#252d3e"/>
+          </pattern>
+          <filter id="soft">
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- ============ NUEVA AREA TECNICA ============ -->
+ 
+        <!-- LAB COMPUTO 1 (superior derecho) -->
+        <g class="room" data-name="Laboratorio Cómputo 1" data-type="lab" data-desc="Laboratorio de informática con 30 computadoras. Windows 11, suite ofimática, conexión a internet de alta velocidad." onclick="selectRoom(this)">
+          <rect x="640" y="20" width="170" height="242" fill="#0ea5e9" fill-opacity="0.22" stroke="#38bdf8" stroke-width="1.5" rx="5"/>
+          <text x="725" y="120" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">Lab.</text>
+          <text x="725" y="136" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">Cómputo</text>
+          <text x="725" y="152" text-anchor="middle" fill="#0ea5e9" font-size="15" font-weight="800">1</text>
+          <text x="725" y="172" text-anchor="middle" fill="#0ea5e9" font-size="13">💻</text>
+        </g>
+
+
+        <!-- ============ PABELLON A ============ -->
+ 
+        <!-- Aula 1 -->
+        <g class="room" data-name="Aula 1" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="60" y="20" width="120" height="80" fill="#7c3aed" fill-opacity="0.2" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="87" y="130" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 1</text>
+          <text x="87" y="148" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+ 
+        <!-- Aula 2 -->
+        <g class="room" data-name="Aula 2" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="60"  y="108" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="130" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 2</text>
+          <text x="232" y="148" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+ 
+        <!-- Aula 3 -->
+        <g class="room" data-name="Aula 3" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="60"  y="196" width="120" height="80" fill="#7c3aed" fill-opacity="0.2" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="377" y="130" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 3</text>
+          <text x="377" y="148" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+ 
+        <!-- Aula 4 -->
+        <g class="room" data-name="Aula 4" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="60"  y="284" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="512" y="130" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 4</text>
+          <text x="512" y="148" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+ 
+        <!-- Aula 5 -->
+        <g class="room" data-name="Aula 5" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="60" y="372" width="120" height="80" fill="#7c3aed" fill-opacity="0.2" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="87" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 5</text>
+          <text x="87" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+ 
+        <!-- Aula 6 --> 
+        <g class="room" data-name="Aula 6" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="60" y="460" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+
+        <!-- =================================== Pabellon B =================================== -->
+        <!-- Aula 7 --> 
+        <g class="room" data-name="Aula 7" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="260" y="20" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Aula 8 -->
+        <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="260" y="108" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 9 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="260" y="196" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 10 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="260" y="284" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 11-->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="260" y="372" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 12 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="260" y="460" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        
+
+        <!-- =================================== Pabellon C =================================== -->
+         <!-- Aula 13 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="450" y="20" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 14 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="450" y="108" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 15 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="450" y="196" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 16 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="450" y="284" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 17 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="450" y="372" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Aula 18 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="450" y="460" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        
+
+        <!-- ============ PABELLON D ============ -->
+
+        <!-- Aula 19 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="20" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Aula 20 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="108" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Aula 21 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="196" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Aula 22 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="284" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 23 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="372" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+        <!-- Aula 24 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="372" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Aula 25 -->
+         <g class="room" data-name="Aula 8" data-type="aula" data-desc="Aula de clases para nivel secundaria. Capacidad para 30 alumnos." onclick="selectRoom(this)">
+          <rect x="660" y="460" width="120" height="80" fill="#7c3aed" fill-opacity="0.18" stroke="#a78bfa" stroke-width="1.5" rx="5"/>
+          <text x="232" y="458" text-anchor="middle" fill="#c4b5fd" font-size="13" font-weight="600">Aula 6</text>
+          <text x="232" y="476" text-anchor="middle" fill="#7c3aed" font-size="11">🏫</text>
+        </g>
+
+        <!-- Dirección 
+        <g class="room" data-name="Dirección" data-type="admin" data-desc="Oficina de la dirección del plantel. Atención a padres y alumnos en horarios establecidos." onclick="selectRoom(this)">
+          <rect x="310" y="338" width="135" height="116" fill="#d97706" fill-opacity="0.22" stroke="#f59e0b" stroke-width="1.5" rx="5"/>
+          <text x="377" y="392" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700">Dirección</text>
+          <text x="377" y="410" text-anchor="middle" fill="#d97706" font-size="13">🏛</text>
+        </g>
+ 
+         Baños
+        <g class="room" data-name="Baños" data-type="bano" data-desc="Sanitarios para alumnos. Separados por género." onclick="selectRoom(this)">
+          <rect x="310" y="464" width="135" height="116" fill="#475569" fill-opacity="0.3" stroke="#94a3b8" stroke-width="1.5" rx="5"/>
+          <text x="377" y="518" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="700">Baños</text>
+          <text x="377" y="536" text-anchor="middle" fill="#64748b" font-size="13">🚻</text>
+        </g>
+ 
+         Secretaría 
+        <g class="room" data-name="Secretaría" data-type="admin" data-desc="Trámites administrativos, inscripciones, historial académico y documentación escolar." onclick="selectRoom(this)">
+          <rect x="455" y="338" width="115" height="242" fill="#d97706" fill-opacity="0.18" stroke="#f59e0b" stroke-width="1.5" rx="5"/>
+          <text x="512" y="458" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700">Secretaría</text>
+          <text x="512" y="476" text-anchor="middle" fill="#d97706" font-size="13">📋</text>
+        </g> -->
+ 
+        <!-- LAB COMPUTO 2 -->
+        <g class="room" data-name="Laboratorio Cómputo 2" data-type="lab" data-desc="Laboratorio de informática con 30 computadoras. Especializado en programación y diseño digital." onclick="selectRoom(this)">
+          <rect x="640" y="338" width="170" height="116" fill="#0ea5e9" fill-opacity="0.22" stroke="#38bdf8" stroke-width="1.5" rx="5"/>
+          <text x="725" y="385" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">Lab. Cómputo</text>
+          <text x="725" y="401" text-anchor="middle" fill="#0ea5e9" font-size="15" font-weight="800">2</text>
+          <text x="725" y="421" text-anchor="middle" fill="#0ea5e9" font-size="13">💻</text>
+        </g>
+ 
+        <!-- LAB COMPUTO 3 -->
+        <g class="room" data-name="Laboratorio Cómputo 3" data-type="lab" data-desc="Laboratorio de informática con 30 computadoras. Equipado con software CAD y multimedia." onclick="selectRoom(this)">
+          <rect x="640" y="464" width="170" height="116" fill="#0ea5e9" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5" rx="5"/>
+          <text x="725" y="511" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">Lab. Cómputo</text>
+          <text x="725" y="527" text-anchor="middle" fill="#0ea5e9" font-size="15" font-weight="800">3</text>
+          <text x="725" y="547" text-anchor="middle" fill="#0ea5e9" font-size="13">💻</text>
+        </g>
+ 
+        <!-- ====== ELEMENTOS ESPECIALES ====== -->
+ 
+        <!-- Escalera 
+        <g>
+          <rect x="595" y="280" width="35" height="40" fill="#1e2438" stroke="#2e3a58" stroke-width="1" rx="4"/>
+          <text x="612" y="296" text-anchor="middle" fill="#3d4f6e" font-size="8">ESC</text>
+          <text x="612" y="311" text-anchor="middle" fill="#3d4f6e" font-size="13">↕</text>
+        </g>-->
+ 
+        <!-- Entrada Norte -->
+        <g>
+          <rect x="350" y="568" width="120" height="22" fill="rgba(126,232,162,0.08)" stroke="#7ee8a2" stroke-width="1.2" rx="4"/>
+          <text x="410" y="583" text-anchor="middle" fill="#7ee8a2" font-size="9" font-weight="700" letter-spacing="1">ENTRADA NORTE</text>
+        </g>
+ 
+        <!-- You are here -->
+        <g filter="url(#soft)">
+          <circle cx="410" cy="563" r="5" fill="#7ee8a2" opacity="0.9">
+            <animate attributeName="r" values="4;8;4" dur="1.8s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.8s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="410" cy="563" r="4" fill="#7ee8a2"/>
+        </g>
+ 
+        <!-- Labels de orientación -->
+        <text x="12" y="160" text-anchor="middle" fill="#1e2438" font-size="8" font-family="DM Sans" letter-spacing="3" transform="rotate(-90,12,160)">ALA NORTE</text>
+        <text x="12" y="460" text-anchor="middle" fill="#1e2438" font-size="8" font-family="DM Sans" letter-spacing="3" transform="rotate(-90,12,460)">ALA SUR</text>
+        <text x="720" y="308" text-anchor="middle" fill="#1e2438" font-size="8" font-family="DM Sans" letter-spacing="3">LABORATORIOS</text>
+ 
+        <!-- Indicador N -->
+        <g transform="translate(760,40)">
+          <circle cx="0" cy="0" r="18" fill="#161a24" stroke="#252d3e" stroke-width="1.2"/>
+          <text x="0" y="5" text-anchor="middle" fill="#7ee8a2" font-size="11" font-family="Syne" font-weight="700">N</text>
+        </g>
+      </svg>
+</div>
+
+<div class="tooltip" id="tt">
+  <div class="tt-name" id="ttName"></div>
+  <div class="tt-type" id="ttType"></div>
+</div>
+
+<body>
+
+</body>
+
+</html>
